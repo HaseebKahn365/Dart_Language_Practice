@@ -13,5 +13,11 @@ void main() {
   int? a;
   int b = 5;
   a = 9;
-  print(a + b); //no null check required after assigning value
+  //print(a + b); //no null check required after assigning value
+  // ignore: unnecessary_null_comparison
+  if (a == null) {
+    print('a is null');
+  } else {
+    print(a + b);
+  } //definite assignment
 }
