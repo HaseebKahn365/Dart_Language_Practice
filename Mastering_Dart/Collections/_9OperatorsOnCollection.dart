@@ -9,13 +9,18 @@ void main() {
   //
   final List<int> twices = list.map((e) => e * 2).toList();
   print(twices);
-  final Squares = transform(list, (x) => x * x);
+  final Squares = transform<int, int>(list, (x) => x * x);
+  const doubleList = [1.0, 2.0, 3.0, 5.3];
+  final doubles = transform<double, int>(doubleList, (x) => (x * 2).round());
+
   print(Squares);
+  print('doubles that are rounded: $doubles');
 }
 
-List<int> transform(List<int> items, int Function(int) f) {
+List<R> transform<T, R>(List<T> items, R Function(T) f) {
+  //T causes the function to be generic AKA template function.  T is a type parameter
   //the function can be passed as an argument
-  var result = <int>[];
+  var result = <R>[];
   for (var x in items) {
     result.add(f(x));
   }
