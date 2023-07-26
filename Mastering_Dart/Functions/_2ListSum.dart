@@ -1,5 +1,7 @@
 void main() {
-  List<int> list = [1, 2, 3, 4, 5];
+  List<int> list = [1, 2, 3, 4, 5]; // this list can only contain int values
+
+//List list = <int> [1, 2, 3, 4, 5];// this list can contain anything but initialized with int
   int sum;
   sum = calculateSum(list);
   print(sum);

@@ -1,10 +1,10 @@
 void main() {
-  int? x;
+  int? x = null;
   final y = x;
   x = 44;
 
-  var z = x ?? 0;
-
+  // var z = x ?? 0;
+  var z = x;
   print('x = $x');
   print('y = $y');
   print('z = $z');
