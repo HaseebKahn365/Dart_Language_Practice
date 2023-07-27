@@ -18,7 +18,7 @@ class BankAccount {
 
 void main() {
   final BankAccount1 = BankAccount(balance: 500, accountHolder: 'haseeb'); //creating instance
-  BankAccount1.accountHolder = 'Haseeb Khan';
+
   BankAccount1.deposit(100);
   BankAccount1.deposit(300);
   print(BankAccount1.balance);
