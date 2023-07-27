@@ -1,4 +1,4 @@
-import 'BankAccount/class.dart';
+import 'class.dart';
 
 void main() {
   final bankAccount1 = BankAccount(200, accountHolder: 'Abdul Haseeb');
