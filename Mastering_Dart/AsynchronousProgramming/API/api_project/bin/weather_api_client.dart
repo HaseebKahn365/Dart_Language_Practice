@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'Weather.dart'; //http is a common identifier to be used when calling fucntions inside the package
 
 class WeatherApiClient {
-  static const baseUrl = 'https://www.metaweather.com';
+  static const baseUrl = 'https://openweathermap.org';
   Future<int> getLocationId(String city) async {
     final locationUrl = Uri.parse('$baseUrl/api/location/search/?query=$city');
     final locationResponse = await http.get(locationUrl);
