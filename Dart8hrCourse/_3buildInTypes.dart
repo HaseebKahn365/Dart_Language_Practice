@@ -1,14 +1,14 @@
-//iterals are constant values from which dart can also identify the types of the varibale.
+//literals are constant values from which dart can also identify the types of the varibale.
 // the arithematic operators are defined in the base num class that is why they can be used between different datatypes.
 
 void main() {
-  // num number = 23 / 3;
-  // String num2 = '2341';
-  // dynamic num3 = int.parse(num2);
-  // num2 = num3.toString();
-  // num3 = double.parse(num2);
-  // print(num2);
-  // print(num3);
+  num number = 23 / 3;
+  String num2 = '2341';
+  dynamic num3 = int.parse(num2);
+  num2 = num3.toString();
+  num3 = double.parse(num2);
+  print(num2);
+  print(num3);
 
   //clamping:
   // int var1 = 55;

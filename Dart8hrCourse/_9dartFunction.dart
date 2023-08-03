@@ -2,30 +2,44 @@ void main() {
   // int Function(int) f1 = show;
   // anotherOne(f1, 33);
   // A()();
-  var list1 = ['hel', 'how'].map((String s) => s.toUpperCase() //this is anonymous function.
-      );
-  print(list1);
-  //requiredpositional
-  fun(12, 44);
-  //OptionalPositional;
-  fun2(41);
-  //requiredNamed:
-  fun3(a: 2, b: 1);
-  //optionalNamed:
-  fun4(); // a is optional and b can be null
-  //hybridNamed:
-  fun5(a: 12, b: 115);
-  var car = make('ROllsroice'); //car is a function object
-  print(car('m5')); //calling the car variable with M5
+  // var list1 = ['hel', 'how'].map((String s) => s.toUpperCase() //this is anonymous function.
+  //     );
+  // print(list1);
+  // //requiredpositional
+  // fun(12, 44);
+  // //OptionalPositional;
+  // fun2(41);
+  // //requiredNamed:
+  // fun3(a: 2, b: 1);
+  // //optionalNamed:
+  // fun4(); // a is optional and b can be null
+  // //hybridNamed:
+  // fun5(a: 12, b: 115);
+  // var car = make('ROllsroice'); //car is a function object
+  // print(car('m5')); //calling the car variable with M5
 
-  var car2 = make('Tesla');
-  print(car2('Dual Motor'));
+  // var car2 = make('Tesla');
+  // print(car2('Dual Motor'));
+
+  final showFun = show12(one: 1);
+  print(showFun); //its a closure not a returned value
+  print('returned from MajFun1: ${showFun(3)}');
 }
 //Lexical Scope
 
 String Function(String) make(String carName) {
   var engine = '4.4 V8';
   return (model) => '$carName $model $engine';
+}
+
+int Function(int) show12({required int one}) {
+  int two = 2;
+  return (three) {
+    print(one);
+    print(two);
+    print(three);
+    return three;
+  };
 }
 
 // String applyUppercase(String s) {//no parenthesis required

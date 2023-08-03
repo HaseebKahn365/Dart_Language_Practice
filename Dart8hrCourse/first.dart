@@ -57,7 +57,7 @@ void main() {
   // List<String>? names = ['haseeb', 'bilal', anon]; actually this means that the list can be null
   List<String?> names = ['haseeb', 'bilal', anon];
   // names = [null, null, null]; it works too.
-  // List<String>? nullable = [null, null, ] the list can be null not the elements
+  //List<String>? mylist; //the list can be null not the elements. in the current state it is null
 
   for (int i = 0; i < 3; i++) {
     if (names[i] == null) {

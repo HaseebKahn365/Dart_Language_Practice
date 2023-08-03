@@ -11,12 +11,16 @@ void main() {
   var a2 = const A(names: [1, 2, 3]);
 
   print(a1.hashCode);
-  print(a2.hashCode);
+  print(a2.hashCode); //both the objects and the constructor must be constant to acquite the same hashcode.
 
-  // final List<int> rolls = const [1, 3, 4];
+  final List<int> rolls = const [1, 3, 4]; //this is a constant list and cannot be changed.
 
-  // const ab = [1, 3, 4];
+  const ab = [
+    1,
+    3,
+    4
+  ]; //this is a constant list and cannot be changed. which means that both rolls and ab are the same and have the same hashcode.
 
-  // print(rolls.hashCode);
-  // print(ab.hashCode);
+  print(rolls.hashCode);
+  print(ab.hashCode);
 }

@@ -26,18 +26,24 @@ void main() {
   var a = A(1, 0);
   var b = const A(1, 0); //even one const will make things point to the same memory. thanks to the const constructor.
   print('obj1 == obj3 ${a == b} ');
+  var c = A(1, 0);
+  var d = A(1, 0);
+  print('printing the equivalence of the c and d: ');
+  print(c.hashCode);
+  print(d.hashCode);
+  print(identical(c, d));
   print('obj1 and obj2 identical: ${identical(a, b)}');
   print('${a.hashCode} and ${b.hashCode}');
 }
 
 class parent {
   final int value;
-  parent(this.value);
+  const parent(this.value);
 }
 
 class child1 extends parent {
   final int var1;
-  child1(this.var1) : super(var1);
+  const child1(this.var1) : super(var1);
   //Defining a method to return string:
   String operator +(parent obj) {
     return 'child1() : subobj($var1) sum = (${obj.value}) +($var1) = ${obj.value + var1}';

@@ -7,23 +7,23 @@ void main() {
   // print('Folowing the collection print');
   // print(collection[collection.length - 1]);
 
-  // List<Object?> collection2 = [2, 3.14, null, true];
+  List collection2 = <Object?>[2, 3.14, null, true];
   // var a = collection2[0] as int;
   // var b = collection2[2];
   // print(a);
   // print(b);
 
-  // List<dynamic?>? collection3 = [23.1, 4, null];
-  // print(collection3);
-  // // collection3 = null this line indicates that after declaring the list as null you can no longer use the add() method on List.
-  // print(collection3);
+  List<num?>? collection3 = [23.1, 4, null];
+  print(collection3);
+  // collection3 = null this line indicates that after declaring the list as null you can no longer use the add() method on List.
+  print(collection3);
   // collection3.add(34);
   // print(collection3);
 
   // list methods
 
   List<int> collection101 = List.generate(23, (index) => index + 1);
-  List<dynamic> collection2 = List.filled(3, 45);
+  // List<dynamic> collection2 = List.filled(3, 45);
   print(collection101);
   print(collection2);
   collection101 = List.empty();

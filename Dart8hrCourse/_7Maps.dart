@@ -8,6 +8,7 @@ void main() {
   var m3 = Map();
   print(m3);
   print(m2[23]!.isEven); //no parenthesis for isOdd required. here two is the key
-  m2.addEntries([const MapEntry('newKey', 37)]); //Make sure to enclose the values in square brackets.
+  m2.addEntries([MapEntry('newKey', 37)]); //Make sure to enclose the values in square brackets.
+  m2.addEntries([MapEntry('haseeb', 234), MapEntry(123, 134)]);
   print(m2);
 }

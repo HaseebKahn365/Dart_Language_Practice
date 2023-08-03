@@ -31,7 +31,7 @@ class Bus {
   }
 }
 
-//late combined with null can server as assignable constant that can be initialized once.
+//late combined with null can serve as assignable constant that can be initialized once.
 
 class A {
   final int a;
@@ -68,10 +68,10 @@ void namedOptional({int a = 4, String b = '10'}) {
 }
 
 void main() {
-  //A obj21 = A(ba: 24);
-  // print(B.obj1);
-  // dynamic s = 'Haseeb';
-  // print(s.runtimeType);
+  A obj21 = A(ba: 24);
+  print(obj21);
+  dynamic s = 'Haseeb';
+  print(s.runtimeType);
   // String? nullableString;
   // String nonNullableString;
   // nonNullableString = nullableString!; //the assertion operator assumes that the nullable string is never null.
@@ -82,15 +82,15 @@ void main() {
   //   a: 25,
   // );
   // namedOptional(a: 24); //b is not mandatory to be passed
-  // Bus b1 = Bus();
-  // b1.accelerate();
-  // b1.brake();
-  // b1.showSpeed();
+  Bus b1 = Bus();
+  b1.accelerate();
+  b1.brake();
+  b1.showSpeed();
 
   // A obj1 = A();
   // obj1.a = 23; //this will work only once. final intialization is done only once
   // print(obj1.a);
-  // //obj1.a = 21; //this is dangerous and can throw an exception. and it did throw an exception
+  //obj1.a = 21; //this is dangerous and can throw an exception. and it did throw an exception
   // print(obj1.a);
   // C obj1 = C();
   // print(obj1.d1);

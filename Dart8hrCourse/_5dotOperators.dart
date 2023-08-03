@@ -11,9 +11,10 @@ void main() {
 //   Iterable temp;
   List<int> collection = [41, 3] //there should be no ; to cascade
     ..add(23)
-    ..sort();
-  //   ..map((e) => e + 1); //here is the problem we need to assign the list to a list
+    ..sort()
+    ..map((e) => e + 1); //here is the problem we need to assign the list to a list
   // this works but temp = collection.map((e) => e + 1);
+  print(collection);
   var strug = collection.map((e) => e + 1).toString();
   print(strug);
 // //Spread operator and null aware spread operator: ...
