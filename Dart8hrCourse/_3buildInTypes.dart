@@ -2,7 +2,7 @@
 // the arithematic operators are defined in the base num class that is why they can be used between different datatypes.
 
 void main() {
-  num number = 23 / 3;
+  //num number = 23 / 3;
   String num2 = '2341';
   dynamic num3 = int.parse(num2);
   num2 = num3.toString();

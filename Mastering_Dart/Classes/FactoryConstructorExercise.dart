@@ -7,7 +7,7 @@ class Person {
     return Person(json['name'] as String, json['age'] as int);
   }
 
-  Map<String, Object> toJson(covariant Person p1) {
+  Map<String, Object> toJson(Person p1) {
     Map<String, Object> m1 = {};
     m1['name'] = p1.name;
     m1['age'] = p1.age;

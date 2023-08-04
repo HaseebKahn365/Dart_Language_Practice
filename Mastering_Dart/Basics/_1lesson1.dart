@@ -12,10 +12,10 @@ void main() {
   // print(name + ' is $age years old.');
   // print('twice my age is ${age} + ${age} = ${age + age}');
 
-  // String lovePizza = 'I love pizza';
-  // print(lovePizza.contains('love'));
-  // String loveChipts = lovePizza.replaceAll('pizza', 'chips');
-  // print(loveChipts);
+  String lovePizza = 'I love pizza';
+  print(lovePizza.contains('love'));
+  String loveChipts = lovePizza.replaceAll('pizza', 'chips');
+  print(loveChipts);
 
   // String ageString = 'hi' + age.toString();
   // print(ageString);

@@ -24,7 +24,7 @@ class Tuple<E extends num> {
 }
 
 void main() {
-  Tuple t1 = Tuple<int>.fromList([2, 3, 4]);
+  Tuple t1 = Tuple<int>.fromList([2, 3, 4, 87]);
   t1.prETuple();
   Tuple t2 = Tuple<double>.fromList([1.4, 21.3, 12.77]);
   t2.prETuple();

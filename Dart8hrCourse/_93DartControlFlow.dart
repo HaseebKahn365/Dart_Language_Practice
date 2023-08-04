@@ -27,7 +27,7 @@ void main() {
   //   print(' list : $item');
   // }
 
-  //ever iterable class also has a for each method
+  //every iterable class also has a for each method
 
   // list.forEach((element) {
   //   print(element);

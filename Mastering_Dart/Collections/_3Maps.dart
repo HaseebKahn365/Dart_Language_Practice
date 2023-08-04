@@ -1,8 +1,8 @@
 void main() {
   Map<String, dynamic> map1 = {'name': 'ali', 'age': 20, 'city': 'mardan'};
-  // print(map1);
-  // var name = map1['name'];
-  // print(name);
+  print(map1);
+  var name = map1['name'];
+  print(name);
   // var age = map1['age'] as int;
   // bool isFinite = age.isFinite;
   // print(isFinite);
@@ -11,10 +11,12 @@ void main() {
   // //null is returned when the key doesn't exist in the map.
   //Both lists and sets are iterables which means that they can be accessed sequentially.
   // we can't use for in loop in maps because maps are not iterables.
-
+  print('Printing Keys only: ');
   for (var item in map1.keys) {
     print(item);
   }
+
+  print('Printing Values only: ');
   for (var value in map1.values) {
     print(value);
   }

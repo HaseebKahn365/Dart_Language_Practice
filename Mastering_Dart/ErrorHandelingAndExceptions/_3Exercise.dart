@@ -1,6 +1,6 @@
 class Email {
   Email(this.email) {
-    if (email.contains('@')) {
+    if (!email.contains('@')) {
       throw FormatException();
     }
   }
@@ -10,6 +10,7 @@ class Email {
 void main() {
   try {
     final email1 = Email('Hi@email.com');
+    print(email1);
     final email2 = Email('Hiemail.com');
     final email3 = Email('123@mail.com');
     final emailList = [email1, email2, email3];

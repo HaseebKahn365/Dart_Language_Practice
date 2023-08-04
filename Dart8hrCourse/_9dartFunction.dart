@@ -1,7 +1,7 @@
 void main() {
   // int Function(int) f1 = show;
   // anotherOne(f1, 33);
-  // A()();
+  A()();
   // var list1 = ['hel', 'how'].map((String s) => s.toUpperCase() //this is anonymous function.
   //     );
   // print(list1);

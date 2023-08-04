@@ -13,4 +13,8 @@ void main() {
   print(sum);
   final doubles = [5.3, 2.4, 3.5, 4.6].sum();
   print(doubles);
+
+  final list1 = [1, 3, 4, 5];
+  final list2 = list1.map((e) => e * 2).where((element) => element % 3 == 0).toList();
+  print(list2);
 }

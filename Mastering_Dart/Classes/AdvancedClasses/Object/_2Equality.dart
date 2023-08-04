@@ -27,6 +27,10 @@ class Point {
 }
 
 void main() {
+  const p101 = Point(1, 1);
+  const p102 = Point(1, 1);
+  print('p1 hash = ${p101.hashCode}, p2 hash = ${p102.hashCode}');
+
   print(Point(0, 0) == Point(0, 0)); //THIS IS FALSE DUE TO DIFFERENT HASHES. WE NEEED TO OVERRIDE THE == OPERATOR
   Point p1 = Point(0, 0);
   Point p2 = Point(1, 2);

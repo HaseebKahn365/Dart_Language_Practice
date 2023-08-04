@@ -4,7 +4,7 @@ void main() {
   copy1[0] = 2;
   copy1[1] = 2; //both of the lists are being changed this is becuase both are pointing to the same memory;
   //using the spread operator to copy;
-  final list3 = [...list1]; //the spread operator also creates a new copy for the list3
+  final list3 = [...list1, ...list1]; //the spread operator also creates a new copy for the list3
   list3[1] = 9;
 
   print('list1: $list1');

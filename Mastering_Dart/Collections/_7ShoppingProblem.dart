@@ -16,5 +16,7 @@ void main() {
     ...grains,
   };
 
-  print(shoppingList);
+  shoppingList.forEach((key, value) {
+    print('{$key: $value}');
+  });
 }
